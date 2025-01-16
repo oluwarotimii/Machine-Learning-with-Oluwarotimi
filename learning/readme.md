@@ -14,6 +14,7 @@ Broadcasting: Performing operations on arrays of different shapes.
 
 4. Indexing and Slicing
 Accessing and modifying elements in an array.
+    -- Trying to understand the meaning an how a submatrix is derived?
 
 5. Mathematical Functions
 NumPy provides functions like np.sum, np.mean, np.std, np.sin, np.exp, etc.
