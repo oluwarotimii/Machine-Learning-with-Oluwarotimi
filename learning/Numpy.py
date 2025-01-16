@@ -36,5 +36,4 @@ print(c)
 print("Broadcasting Addition ", c + 5)
 
 
-#indexing and slicing in numpy
 
