@@ -18,3 +18,4 @@ print("Second Column: ", arr[:,1])
 
 # slicing a sub matrix
 print("Submatrix:\n", arr[0:2, 1:3])
+
