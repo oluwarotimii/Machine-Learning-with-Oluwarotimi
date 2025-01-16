@@ -22,3 +22,19 @@ RangeArr = np.arange(0,10,2) # Start, stop, step
 print("Making an array from a range of values: ", RangeArr)
 
 #Array Operations
+#Element Wise operations
+a = np.array([1,3,5,6])
+b = np.array([2,4,6,8,])
+
+print(a,b)
+print("Addition: ", a + b)
+print("Multiplication: ", a * b) 
+
+#Broadcasting?
+c = np.array([1,2,4,5])
+print(c)
+print("Broadcasting Addition ", c + 5)
+
+
+#indexing and slicing in numpy
+
