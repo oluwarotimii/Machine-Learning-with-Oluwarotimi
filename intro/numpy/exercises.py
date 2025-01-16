@@ -39,4 +39,4 @@ arr2 = np.random.randint(10,20, size=(3,2))
 print(arr1, arr2)
 
 full_arr = np.dot(arr1, arr2)
-print("Matrix Multiplication:\n" full_arr)
+print("Matrix Multiplication:\n", full_arr)
