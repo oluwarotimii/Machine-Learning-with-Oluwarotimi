@@ -1,0 +1,98 @@
+# Byte-compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+env/
+*.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and debugging
+*.log
+*.out
+*.err
+*.pdb
+*.prof
+*.cache
+
+# Dataset and model files
+*.csv
+*.tsv
+*.data
+*.json
+*.h5
+*.onnx
+*.pth
+*.ckpt
+*.pkl
+*.joblib
+*.sav
+
+# TensorFlow and PyTorch checkpoints
+checkpoint/
+*.index
+*.meta
+
+# Images and binary files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.mp4
+*.mkv
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# Output files and reports
+output/
+results/
+reports/
+
+# Large files generated during training
+*.hdf5
+*.npy
+*.npz
+*.mat
+
+# IDE-specific files
+.vscode/
+.idea/
+*.iml
+
+# Testing
+.coverage
+pytest_cache/
+htmlcov/
+.tox/
+
+# Docker and containerization
+*.pid
+*.seed
+*.db
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Tools and caches
+pip-wheel-metadata/
+build/
+dist/
+*.egg-info/
+
+# Conda environment files
+*.conda
+*.yml
+*.yaml
