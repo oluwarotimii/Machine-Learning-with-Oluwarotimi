@@ -103,3 +103,51 @@ print(f"{confusion_matrix(y_test, y_pred)}")
 # Classification Report
 print("Classification Report: ")
 print(classification_report(y_test, y_pred))
+
+
+# ----------- VISUALIZATIONS -----------
+
+# 1️⃣ Feature Importance (Coefficients)
+feature_importance = np.abs(model.coef_[0])
+feature_names = X.columns
+
+plt.figure(figsize=(10, 5))
+plt.barh(feature_names, feature_importance, color="skyblue")
+plt.xlabel("Feature Importance (Coefficient Magnitude)")
+plt.ylabel("Feature Names")
+plt.title("Feature Importance in Logistic Regression")
+plt.show()
+
+# 2️⃣ Confusion Matrix Visualization
+cm = confusion_matrix(y_test, y_pred)
+
+plt.figure(figsize=(6, 4))
+sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", xticklabels=["No Diabetes", "Diabetes"], yticklabels=["No Diabetes", "Diabetes"])
+plt.xlabel("Predicted")
+plt.ylabel("Actual")
+plt.title("Confusion Matrix")
+plt.show()
+
+# # 3️⃣ ROC Curve
+# fpr, tpr, _ = roc_curve(y_test, y_probs)
+# roc_auc = auc(fpr, tpr)
+
+# plt.figure(figsize=(6, 4))
+# plt.plot(fpr, tpr, color="blue", label=f"ROC curve (AUC = {roc_auc:.2f})")
+# plt.plot([0, 1], [0, 1], color="gray", linestyle="--")  # Random guess line
+# plt.xlabel("False Positive Rate")
+# plt.ylabel("True Positive Rate")
+# plt.title("Receiver Operating Characteristic (ROC) Curve")
+# plt.legend()
+# plt.show()
+
+# 4️⃣ Precision-Recall Curve
+precision, recall, _ = precision_recall_curve(y_test, y_probs)
+
+plt.figure(figsize=(6, 4))
+plt.plot(recall, precision, color="green", label="Precision-Recall Curve")
+plt.xlabel("Recall")
+plt.ylabel("Precision")
+plt.title("Precision-Recall Curve")
+plt.legend()
+plt.show()
