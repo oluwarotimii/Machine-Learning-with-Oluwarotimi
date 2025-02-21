@@ -58,7 +58,7 @@ Each library will be explored in detail with examples and exercises before apply
 
 ---
 
-### **2. Diabetes Prediction**
+### **2. Diabetes Prediction** ✅ 
 - **Objective**: Predict whether a patient has diabetes based on health metrics.
 - **Skills Demonstrated**:
   - Data preprocessing and feature engineering.
