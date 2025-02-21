@@ -48,7 +48,7 @@ Each library will be explored in detail with examples and exercises before apply
 
 ## **Beginner Projects**
 
-### **1. Iris Flower Classification**
+### **1. Iris Flower Classification** ✅ 
 - **Objective**: Classify iris flowers into species based on features like petal length and width.
 - **Skills Demonstrated**:
   - Data exploration and visualization.
